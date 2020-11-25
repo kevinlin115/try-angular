@@ -1,0 +1,20 @@
+{
+  "BUTTON": {
+    "BUYING": "Buying",
+    "EDIT": "Edit",
+    "HIDE": "Hide",
+    "MAIN_BAR": {
+      "COMMON_LINKS": "Common links",
+      "SETTINGS": "Settings",
+      "UNHIDE_CHALLENGES": "Unhide challenges"
+    },
+    "MISCS": "Miscs",
+    "NO": "No",
+    "RECOVER": "Recover",
+    "SELLING": "Selling",
+    "START": "Start",
+    "UNHIDE": "Unhide",
+    "UNHIDE_CHALLENGE": "Unhide Challenge",
+    "YES": "Yes"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "DIALOG": {
+    "CONTENT": {
+      "HIDE_CHALLENGE_CONFIRM": "Are you sure to hide all these {{countSubChallenge}} sub-challenge from {{challengeName}}",
+      "SAVE_CHANGE": "Do you want to save the change?"
+    },
+    "SETTINGS": {
+      "LANGUAGE": "Language"
+    },
+    "TITLE": {
+      "COMMON_LINKS": "Common links",
+      "CONFIRM": "Confirm",
+      "NO_HIDDEN_CHALLENGE": "No hidden challenge",
+      "PRICE_UR_CHALLENGE": "Price your challenge",
+      "REPRICE_UR_CHALLENGE": "Reprice your challenge",
+      "UNHIDE_CHALLENGE": "Unhide challenges"
+    }
+  }
+}

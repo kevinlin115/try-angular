@@ -1,0 +1,82 @@
+{
+  "CHALLENGE": {
+    "0": {
+      "TITLE": "ENG CHALLENGE TITLE000標題",
+      "DESCRIPTION": "ENG CHALLENGE 敘述零"
+    },
+    "1": {
+      "TITLE": "ENG CHALLENGE TITLE1111標題",
+      "DESCRIPTION": "ENG CHALLENGE 敘述11111"
+    },
+    "2": {
+      "TITLE": "ENG CHALLENGE TITL22222標題",
+      "DESCRIPTION": "ENG CHALLENGE 敘述222222"
+    },
+    "3": {
+      "TITLE": "ENG CHALLENGE title 33333",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 3333"
+    },
+    "4": {
+      "TITLE": "ENG CHALLENGE title 44444",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 4444"
+    },
+    "5": {
+      "TITLE": "ENG CHALLENGE title 55555",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 55555"
+    },
+    "6": {
+      "TITLE": "ENG CHALLENGE title 6666",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 666666"
+    },
+    "7": {
+      "TITLE": "ENG CHALLENGE title 7777",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 7777"
+    },
+    "8": {
+      "TITLE": "ENG CHALLENGE title 8888",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 888888"
+    },
+    "9": {
+      "TITLE": "ENG CHALLENGE title 99999",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 99999"
+    },
+    "10": {
+      "TITLE": "ENG CHALLENGE title 10",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 10"
+    },
+    "11": {
+      "TITLE": "ENG CHALLENGE title 11",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 11"
+    },
+    "12": {
+      "TITLE": "ENG CHALLENGE title 12",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 12"
+    },
+    "13": {
+      "TITLE": "ENG CHALLENGE title 13",
+      "DESCRIPTION": "ENG CHALLENGE 敘述 13"
+    }
+  },
+  "SUB_CHALLENGE": {
+    "C0": "SUB0SUB_CHALLENGE",
+    "C1": "SUB1SUB_CHALLENGE",
+    "C2": "SUB2SUB_CHALLENGE",
+    "C3": "SUB3SUB_CHALLENGE",
+    "C4": "SUB4SUB_CHALLENGE",
+    "C5": "SUB5SUB_CHALLENGE",
+    "C6": "SUB6SUB_CHALLENGE",
+    "C7": "SUB7SUB_CHALLENGE",
+    "C8": "SUB8SUB_CHALLENGE",
+    "C9": "SUB9SUB_CHALLENGE",
+    "C10": "SUB10SUB_CHALLENGE",
+    "C11": "SUB11SUB_CHALLENGE",
+    "C12": "SUB12SUB_CHALLENGE",
+    "C13": "SUB13SUB_CHALLENGE",
+    "C14": "SUB14SUB_CHALLENGE",
+    "C15": "SUB15SUB_CHALLENGE",
+    "C16": "SUB16SUB_CHALLENGE",
+    "C17": "SUB17SUB_CHALLENGE",
+    "C18": "SUB18SUB_CHALLENGE",
+    "C19": "SUB195UB_CHALLENGE"
+  }
+}

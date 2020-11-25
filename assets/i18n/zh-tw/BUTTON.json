@@ -1,0 +1,20 @@
+{
+  "BUTTON": {
+    "BUYING": "買進",
+    "EDIT": "編輯",
+    "HIDE": "隱藏",
+    "MAIN_BAR": {
+      "COMMON_LINKS": "常用連結",
+      "SETTINGS": "設定",
+      "UNHIDE_CHALLENGES": "取消隱藏挑戰"
+    },
+    "MISCS": "雜項",
+    "NO": "否",
+    "RECOVER": "復原",
+    "SELLING": "賣出",
+    "START": "開始",
+    "UNHIDE": "取消隱藏",
+    "UNHIDE_CHALLENGE": "取消隱藏挑戰",
+    "YES": "是"
+  }
+}

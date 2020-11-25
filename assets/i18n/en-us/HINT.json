@@ -1,0 +1,6 @@
+{
+  "HINT": {
+    "HAVE_HIDE_CHALLENGE": "You have hide the challenge - {{challengeName}}",
+    "NUMBERS_ONLY": "Numbers only"
+  }
+}
