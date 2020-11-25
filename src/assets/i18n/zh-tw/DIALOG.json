@@ -1,0 +1,19 @@
+{
+  "DIALOG": {
+    "CONTENT": {
+      "HIDE_CHALLENGE_CONFIRM": "確定要隱藏挑戰 {{challengeName}} 的所有 {{countSubChallenge}} 個子挑戰",
+      "SAVE_CHANGE": "你確定要儲存變更的項目嗎？"
+    },
+    "SETTINGS": {
+      "LANGUAGE": "語言"
+    },
+    "TITLE": {
+      "COMMON_LINKS": "常用連結",
+      "CONFIRM": "確認",
+      "NO_HIDDEN_CHALLENGE": "沒有隱藏的挑戰",
+      "PRICE_UR_CHALLENGE": "幫挑戰定價",
+      "REPRICE_UR_CHALLENGE": "重新幫挑戰定價",
+      "UNHIDE_CHALLENGE": "取消隱藏挑戰"
+    }
+  }
+}

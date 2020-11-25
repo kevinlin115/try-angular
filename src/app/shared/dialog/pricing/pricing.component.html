@@ -1,0 +1,44 @@
+<h4 class="dialog-title">{{data.pricingTitle | translate}}</h4>
+<form [formGroup]="pricingForm">
+  <table class="w-100 mt-3">
+    <tbody class="text-center">
+      <tr>
+        <!-- <form > -->
+        <td>
+          <mat-form-field class="w-75">
+            <input type="number" class="align-sub" autocomplete="off" formControlName="ex" appNumbersOnly
+              appRemoveLeadingZero maxlength="3" (notTypingNumber)="onlyNumbersAllowed(0)"
+              (typingNumber)="typingNumber(0)" matInput [placeholder]="'POE.CURRENCY.EXALTED' | translate"
+              (keyup.enter)="confirm()">
+            <img matSuffix class="dialog-curreny-img"
+              src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToRare.png">
+          </mat-form-field>
+        </td>
+        <td class="text-center">
+          <mat-form-field class="w-75">
+            <input type="number" class="align-sub" autocomplete="off" formControlName="c" appNumbersOnly
+              appRemoveLeadingZero maxlength="3" (notTypingNumber)="onlyNumbersAllowed(1)"
+              (typingNumber)="typingNumber(1)" matInput [placeholder]="'POE.CURRENCY.CHAOS' | translate"
+              (keyup.enter)="confirm()">
+            <img matSuffix class="dialog-curreny-img"
+              src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollRare.png">
+          </mat-form-field>
+        </td>
+        <!-- </form> -->
+      </tr>
+      <tr>
+        <td>
+          <div class="warning-msg w-75" *ngIf="leftInputWarn">{{leftInputWarn | translate}}</div>
+        </td>
+        <td>
+          <div class="warning-msg w-75" *ngIf="rightInputWarn">{{rightInputWarn | translate}}</div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+
+<!-- 下方確認 -->
+<div class="mt-3">
+  <app-center-button [disabled]="disableConfirm" (btnClick)="confirm()"></app-center-button>
+</div>

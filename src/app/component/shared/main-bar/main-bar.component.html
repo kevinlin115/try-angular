@@ -1,0 +1,24 @@
+<mat-accordion>
+  <mat-expansion-panel class="main-bar" [expanded]="miscs.expanded">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        {{'BUTTON.MISCS' | translate}}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="w-100 my-4 p-0 d-flex justify-content-around" style="cursor: default;">
+      <div class="cursor-pointer hover-enlarge" (click)="openSettings()">
+        <img class="mx-auto main-info-img d-block h-80 mb-2" src="assets/icon/settings.png">
+        <div class="text-center">{{'BUTTON.MAIN_BAR.SETTINGS' | translate}}</div>
+      </div>
+      <div class="cursor-pointer hover-enlarge" (click)="unhideChallenges()">
+        <img class="mx-auto main-info-img d-block h-80 mb-2" src="assets/icon/eye.png">
+        <div class="text-center">
+          {{'BUTTON.MAIN_BAR.UNHIDE_CHALLENGES' | translate}}</div>
+      </div>
+      <div class="cursor-pointer hover-enlarge" (click)="commonLinks()">
+        <img class="mx-auto main-info-img d-block h-80  mb-2" src="assets/icon/commonLink.png">
+        <div class="text-center">{{'BUTTON.MAIN_BAR.COMMON_LINKS' | translate}}</div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

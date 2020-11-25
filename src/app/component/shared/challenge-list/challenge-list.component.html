@@ -1,0 +1,63 @@
+<mat-accordion style="overflow-y: hidden;">
+  <ng-container *ngFor="let challenge of challengeList; let challengeIndex = index;">
+    <mat-expansion-panel *ngIf="showChallenge(challenge)" [@dropInOut]>
+      <!-- 父挑戰 -->
+      <mat-expansion-panel-header [matTooltip]="'CHALLENGE.' + challengeIndex + '.DESCRIPTION' | translate"
+        [matTooltipShowDelay]="environment.matTooltipShowDelay" matTooltipPosition="above">
+        <mat-panel-title>
+          <div class="my-auto">
+            {{ 'CHALLENGE.' + challengeIndex + '.TITLE' | translate }}
+            <span *ngIf="showSubChallengeBadge(challenge)" [matBadge]="getSelectedSubChallenge(challenge)"></span>
+          </div>
+          <div>
+            <span class="mr-2">
+              ({{getSelectedSubChallengeRatio(challenge)}})
+            </span>
+            <button mat-raised-button (click)="$event.stopPropagation();hideChallenge(challenge,challengeIndex)"
+              class="font-weight-bold">
+              {{ 'BUTTON.HIDE' | translate }}
+            </button>
+          </div>
+        </mat-panel-title>
+        <!-- 會根據前面的字串移動
+            <mat-panel-description>
+                {{i}}
+            </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <!-- 子挑戰 -->
+      <mat-list>
+        <ng-container *ngFor="let subChallenge of challenge;let isLast = last;let subChallengeIndex = index">
+          <mat-list-item (click)="onCheckSubchallenge(subChallenge);" *ngIf="!subChallenge.hidden" [@dropInOut]>
+            <div class="subChallenge-text">
+              <i class="material-icons white-icon" [ngClass]="{'opacity-0': !subChallenge.selected}">
+                check
+              </i> {{ 'SUB_CHALLENGE.' + subChallenge.name | translate }}
+            </div>
+            <div>
+              <div *ngIf="!!subChallenge.price && subChallenge.selected" class="d-inline-block price-tag mr-2 px-2"
+                (click)="editPrice(subChallenge);$event.stopPropagation();" [@dropInOut]>
+                <section class="edit-description">{{ 'BUTTON.EDIT' | translate }}</section>
+                <div *ngIf="subChallenge.price.ex > 0" class="d-inline-block price">
+                  <span>{{subChallenge.price.ex}}</span>
+                  <img class="dialog-curreny-img scale-80"
+                    src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyAddModToRare.png">
+                </div>
+                <div *ngIf="subChallenge.price.c > 0" class="d-inline-block price">
+                  <span>{{subChallenge.price.c}}</span>
+                  <img class="dialog-curreny-img scale-80"
+                    src="https://web.poecdn.com/image/Art/2DItems/Currency/CurrencyRerollRare.png">
+                </div>
+              </div>
+              <button mat-raised-button
+                (click)="$event.stopPropagation();hideSubChallenge(subChallenge,subChallengeIndex,challengeIndex)"
+                class="font-weight-bold">
+                {{ 'BUTTON.HIDE' | translate }}
+              </button>
+            </div>
+          </mat-list-item>
+          <mat-divider *ngIf="!isLast"></mat-divider>
+        </ng-container>
+      </mat-list>
+    </mat-expansion-panel>
+  </ng-container>
+</mat-accordion>

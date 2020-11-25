@@ -1,0 +1,121 @@
+// material overwrite class
+.header-placeholder {
+    background: $color-challenge-background;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.home-challenge-list {
+  padding-bottom: 6rem;
+  background: $color-challenge-background;
+  .mat-tab-header {
+    background: $color-tab-header !important;
+    top: 1.5rem !important;
+    position: sticky !important;
+    z-index: 5 !important;
+  }
+  .mat-expansion-panel-body {
+  cursor: pointer !important;
+  padding: 0rem 1.5rem !important;
+    p {
+      margin: 0 !important;
+    }
+  }
+}
+
+.mat-tab-label {
+    background-color: transparent;
+    color: white;
+    font-weight: 700;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.mat-tab-label-active {
+    opacity: 1 !important;
+    color: white !important;
+    outline: 1 !important;
+    font-weight: bolder !important;
+}
+
+.mat-expansion-panel-header-title {
+    color: white !important;
+    justify-content: space-between;
+}
+
+.mat-expansion-panel {
+    background: $color-tab-background !important;
+    color: white !important;
+}
+
+.mat-expansion-panel-content {
+    background: $color-tab-content-background !important;
+}
+
+.mat-ink-bar {
+    background-color: transparent !important;
+}
+
+.mat-badge-content {
+    background: red !important;
+    color: white !important;
+    top: -0.3rem !important;
+    min-width: 1rem;
+    width: fit-content !important;
+    height: 1rem !important;
+    right: -1.5rem !important;
+    line-height: 1rem !important;
+    border-radius: 0.5rem !important;
+}
+
+.mat-list-base {
+    padding-top: 0 !important;
+}
+
+.mat-list-item-content {
+    justify-content: space-between !important;
+    padding-right: 1.5rem !important;
+}
+
+.material-icons {
+    vertical-align: text-bottom !important;
+    transition: opacity 0.5s;
+}
+
+.white-icon {
+    color: greenyellow;
+}
+
+.mat-tooltip {
+    background: black !important;
+    color: white;
+    font-size: 1rem !important;
+}
+
+.mat-dialog-container {
+    background: $color-dialog-background !important;
+}
+
+.mat-snack-bar-container {
+    max-width: 70vw !important;
+}
+
+.main-bar {
+    .mat-expansion-panel-body {
+        padding: 0;
+        margin: 0;
+    }
+}
+
+.unhide-dialog {
+    .mat-expansion-panel-body {
+        padding: 0;
+    }
+}
+
+.unhide-dialog-container .mat-dialog-container{
+  padding-top: 0;
+}

@@ -1,0 +1,41 @@
+<!-- <p>{{screenWidth}}</p> -->
+<section>
+  <div class="px-4 my-4">
+    <h2>ChallengeTrade</h2>
+    <app-main-bar></app-main-bar>
+  </div>
+  <div class="px-4 home-challenge-list">
+    <div class="py-3 header-placeholder"></div>
+    <mat-tab-group mat-stretch-tabs [(selectedIndex)]="tradingType" [backgroundColor]="'primary'">
+      <!-- 設定背景顏色  [backgroundColor]="'primary'" -->
+      <!-- Selling -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <i [ngClass]="{'invisible':tradingType !== TradingType.Buying}" class="material-icons mr-2 green_arrow">
+            arrow_forward
+          </i>
+          <!-- <mat-icon class="example-tab-icon">thumb_up</mat-icon> -->
+          <img class="challenge_tab_img" src="assets/icon/buying.png">
+          <span class="pl-2">{{ 'BUTTON.BUYING' | translate }}</span>
+        </ng-template>
+        <!-- 挑戰列表 買進 -->
+        <app-challenge-list [buying]="true"></app-challenge-list>
+      </mat-tab>
+      <!-- BUYING -->
+      <mat-tab>
+        <ng-template mat-tab-label>
+          <i [ngClass]="{'invisible':tradingType !== TradingType.Selling}" class="material-icons mr-2 green_arrow">
+            arrow_forward
+          </i>
+          <img class="challenge_tab_img" src="assets/icon/selling.png">
+          <span class="pl-2">{{ 'BUTTON.SELLING' | translate }}</span>
+        </ng-template>
+        <!-- 挑戰列表 賣出 -->
+        <app-challenge-list [buying]="false"></app-challenge-list>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+  <div (click)="test()">click me</div>
+</section>
+<app-footer [footerObj]="footerObj" (modeChange)="onModeChange($event)"></app-footer>
+<!-- <app-test [(ngModel)]="testBase"></app-test> -->

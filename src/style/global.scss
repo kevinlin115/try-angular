@@ -1,0 +1,21 @@
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+// NOT WORKING FOR MAT BUTTON
+// button {
+//     outline: none;
+// }
+.align-sub {
+    vertical-align: sub !important;
+}
+
+.scale-80 {
+    transform: scale(.8);
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}

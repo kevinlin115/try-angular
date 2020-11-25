@@ -1,0 +1,38 @@
+.dialog-title {
+    color: red;
+    text-align: center;
+}
+
+.dialog-btn {
+    width: 7rem;
+    cursor: pointer;
+    &:hover {
+        background: $color-dialog-btn;
+    }
+}
+
+.dialog-curreny-img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.reminder-container {
+    line-height: 2rem;
+}
+
+.recover-btn {
+    cursor: pointer;
+    color: crimson;
+    float: right;
+    font-weight: bolder;
+    background: seashell;
+    border-radius: 9999px;
+}
+
+.sub-challenge-text {
+    color: $color-sub-challenge-font;
+}
+
+.category-panel {
+    background: $color-dialog-title !important;
+}

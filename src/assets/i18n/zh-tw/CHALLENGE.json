@@ -1,0 +1,82 @@
+{
+  "CHALLENGE": {
+    "0": {
+      "DESCRIPTION": "CHALLENGE 敘述零",
+      "TITLE": "CHALLENGE TITLE000標題"
+    },
+    "1": {
+      "DESCRIPTION": "CHALLENGE 敘述11111",
+      "TITLE": "CHALLENGE TITLE1111標題"
+    },
+    "2": {
+      "DESCRIPTION": "CHALLENGE 敘述222222",
+      "TITLE": "CHALLENGE TITL22222標題"
+    },
+    "3": {
+      "DESCRIPTION": "CHALLENGE 敘述33",
+      "TITLE": "CHALLENGE TIT33333標題"
+    },
+    "4": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 4444",
+      "TITLE": "CHINESE CHALLENGE title 44444"
+    },
+    "5": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 55555",
+      "TITLE": "CHINESE CHALLENGE title 55555"
+    },
+    "6": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 666666",
+      "TITLE": "CHINESE CHALLENGE title 6666"
+    },
+    "7": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 7777",
+      "TITLE": "CHINESE CHALLENGE title 7777"
+    },
+    "8": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 888888",
+      "TITLE": "CHINESE CHALLENGE title 8888"
+    },
+    "9": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 99999",
+      "TITLE": "CHINESE CHALLENGE title 99999"
+    },
+    "10": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 10",
+      "TITLE": "CHINESE CHALLENGE title 10"
+    },
+    "11": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 11",
+      "TITLE": "CHINESE CHALLENGE title 11"
+    },
+    "12": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 12",
+      "TITLE": "CHINESE CHALLENGE title 12"
+    },
+    "13": {
+      "DESCRIPTION": "CHINESE CHALLENGE 敘述 13",
+      "TITLE": "CHINESE CHALLENGE title 13"
+    }
+  },
+  "SUB_CHALLENGE": {
+    "C0": "SUB0齁齁齁齁",
+    "C1": "SUB1齁齁齁齁",
+    "C10": "SUB10齁齁齁齁",
+    "C11": "SUB11齁齁齁齁",
+    "C12": "SUB12齁齁齁齁",
+    "C13": "SUB13齁齁齁齁",
+    "C14": "SUB14齁齁齁齁",
+    "C15": "SUB15齁齁齁齁",
+    "C16": "SUB16齁齁齁齁",
+    "C17": "SUB17齁齁齁齁",
+    "C18": "SUB18齁齁齁齁",
+    "C19": "SUB19齁齁齁齁",
+    "C2": "SUB2齁齁齁齁",
+    "C3": "SUB3齁齁齁齁",
+    "C4": "SUB4齁齁齁齁",
+    "C5": "SUB5齁齁齁齁",
+    "C6": "SUB6齁齁齁齁",
+    "C7": "SUB7齁齁齁齁",
+    "C8": "SUB8齁齁齁齁",
+    "C9": "SUB9齁齁齁齁"
+  }
+}

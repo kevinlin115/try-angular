@@ -1,0 +1,108 @@
+<h4 class="dialog-title">{{ unhideTitle | translate }}</h4>
+
+<!-- 買進 -->
+<mat-expansion-panel class="unhide-dialog category-panel" [@dropInOut] *ngIf="hasHiddenChallenge(buyChallengeList)">
+  <mat-expansion-panel-header class="color-challenge-background">
+    <mat-panel-title>
+      <div class="my-auto">
+        {{ "BUTTON.BUYING" | translate }}
+      </div>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-list>
+    <ng-container *ngFor="let challenge of buyChallengeList; let challengeIndex = index;">
+      <mat-expansion-panel class="unhide-dialog" [@dropInOut] *ngIf="hasHiddenSubchallenge(challenge)">
+        <!-- 父挑戰 -->
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <div class="my-auto">
+              {{ "CHALLENGE." + challengeIndex + ".TITLE" | translate }}
+            </div>
+            <div>
+              <button mat-raised-button (click)="$event.stopPropagation();unhideChallenge(challenge);"
+                class="font-weight-bold">
+                {{ "BUTTON.UNHIDE" | translate }}
+              </button>
+            </div>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <!-- 子挑戰 -->
+        <mat-list>
+          <ng-container *ngFor="let subChallenge of challenge;let isLast = last;let subChallengeIndex = index">
+            <mat-list-item [@dropInOut] *ngIf="subChallenge.hidden">
+              <div>
+                {{ 'SUB_CHALLENGE.' + subChallenge.name | translate }}
+              </div>
+              <div>
+                <button mat-raised-button
+                  (click)="$event.stopPropagation();subChallenge.hidden = !subChallenge.hidden;changed = true;"
+                  class="font-weight-bold">
+                  {{ "BUTTON.UNHIDE" | translate }}
+                </button>
+              </div>
+            </mat-list-item>
+            <mat-divider *ngIf="!isLast"></mat-divider>
+          </ng-container>
+        </mat-list>
+      </mat-expansion-panel>
+    </ng-container>
+  </mat-list>
+
+</mat-expansion-panel>
+
+<!-- 賣出 -->
+<div class="pt-3">
+  <mat-expansion-panel class="unhide-dialog category-panel" [@dropInOut] *ngIf="hasHiddenChallenge(sellChallengeList)">
+    <mat-expansion-panel-header class="color-challenge-background">
+      <mat-panel-title>
+        <div class="my-auto">
+          {{ "BUTTON.SELLING" | translate }}
+        </div>
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-list>
+      <ng-container *ngFor="let challenge of sellChallengeList; let challengeIndex = index;">
+        <mat-expansion-panel class="unhide-dialog" [@dropInOut] *ngIf="hasHiddenSubchallenge(challenge)">
+          <!-- 父挑戰 -->
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div class="my-auto">
+                {{ "CHALLENGE." + challengeIndex + ".TITLE" | translate }}
+              </div>
+              <div>
+                <button mat-raised-button (click)="$event.stopPropagation();unhideChallenge(challenge);"
+                  class="font-weight-bold">
+                  {{ "BUTTON.UNHIDE" | translate }}
+                </button>
+              </div>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
+          <!-- 子挑戰 -->
+          <mat-list>
+            <ng-container *ngFor="let subChallenge of challenge;let isLast = last;let subChallengeIndex = index">
+              <mat-list-item [@dropInOut] *ngIf="subChallenge.hidden">
+                <div>
+                  {{ 'SUB_CHALLENGE.' + subChallenge.name | translate }}
+                </div>
+                <div>
+                  <button mat-raised-button
+                    (click)="$event.stopPropagation();subChallenge.hidden = !subChallenge.hidden;changed = true;"
+                    class="font-weight-bold">
+                    {{ "BUTTON.UNHIDE" | translate }}
+                  </button>
+                </div>
+              </mat-list-item>
+              <mat-divider *ngIf="!isLast"></mat-divider>
+            </ng-container>
+          </mat-list>
+        </mat-expansion-panel>
+      </ng-container>
+    </mat-list>
+  </mat-expansion-panel>
+</div>
+
+<div class="d-flex justify-content-center pt-3">
+  <button style="outline: none;" mat-stroked-button class="font-weight-bold dialog-btn" (click)="confirm()">
+    {{'DIALOG.TITLE.CONFIRM' | translate}}
+  </button>
+</div>

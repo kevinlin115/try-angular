@@ -1,0 +1,6 @@
+<div class="reminder-container">
+    <span>{{ 'HINT.HAVE_HIDE_CHALLENGE' | translate:data}}</span>
+    <span *ngIf="hideSubChallenge"> - {{data.subChallengeName}}</span>
+    <br>
+    <span class="recover-btn px-2 mr-0" (click)="recoverChallenge()">{{'BUTTON.RECOVER' | translate}}</span>
+</div>

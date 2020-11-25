@@ -1,0 +1,52 @@
+.switch-field {
+    display: flex;
+    height: fit-content;
+}
+
+input[type="radio"] {
+    position: absolute !important;
+    /* 	clip: rect(0, 0, 0, 0); */
+    height: 0;
+    width: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+.switch-field label {
+    background-color: #e4e4e4;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    line-height: 1;
+    text-align: center;
+    padding: .5rem 1rem;
+    margin-right: -1px;
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+}
+
+.switch-field label:hover {
+    cursor: pointer;
+}
+
+.switch-field input:checked+label:nth-child(2) {
+    color: white;
+    background-color: green;
+    box-shadow: none;
+}
+
+.switch-field input:checked+label:last-child {
+    color: white;
+    background-color: red;
+    box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+    border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+    border-radius: 0 4px 4px 0;
+}

@@ -1,0 +1,15 @@
+.green_arrow {
+    animation: horizontal_vibrate 1.5s infinite;
+    font-size: 2rem;
+    color: rgb(32, 148, 32);
+}
+
+@keyframes horizontal_vibrate {
+    0%,
+    100% {
+        transform: translate(4px, 0);
+    }
+    50% {
+        transform: translate(-4px, 0);
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "POE": {
+    "CURRENCY": {
+      "CHAOS": "Chaos Orb",
+      "EXALTED": "Exalted Orb"
+    },
+    "MODE": {
+      "HARDCORE": "Hardcore",
+      "SOFTCORE": "Softcore"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<h4 class="dialog-title">{{'DIALOG.TITLE.COMMON_LINKS' | translate}}</h4>
+<div class="common_links_container">
+  <div *ngFor="let commonLink of commonLinks" class="mb-2">
+    <a [href]="commonLink.url" target="default">{{commonLink.displayName}}</a>
+  </div>
+</div>

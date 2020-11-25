@@ -1,0 +1,6 @@
+<div class="switch-field">
+    <input type="radio" id="radio-one" name="switch-one" value="softcore" [(ngModel)]="mode" (change)="onModeChange()">
+    <label for="radio-one">{{'POE.MODE.SOFTCORE' | translate}}</label>
+    <input type="radio" id="radio-two" name="switch-one" value="hardcore" [(ngModel)]="mode" (change)="onModeChange()">
+    <label for="radio-two">{{'POE.MODE.HARDCORE' | translate}}</label>
+</div>

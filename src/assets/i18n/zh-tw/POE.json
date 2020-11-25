@@ -1,0 +1,12 @@
+{
+  "POE": {
+    "CURRENCY": {
+      "CHAOS": "混沌石",
+      "EXALTED": "崇高石"
+    },
+    "MODE": {
+      "HARDCORE": "專家",
+      "SOFTCORE": "普通"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<div class="footer-container w-100">
+  <app-mode-radio-btn [mode]="footerObj.mode" (modeChange)="onModeChange($event)"></app-mode-radio-btn>
+  <button mat-raised-button class="font-weight-bold" (click)="start()">
+    {{ 'BUTTON.START' | translate }}
+  </button>
+</div>
+<input [(ngModel)]="sendTest">

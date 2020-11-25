@@ -1,0 +1,62 @@
+body {
+    color: white;
+    background: $color-challenge-background;
+    user-select: none;
+}
+
+.challenge_tab_img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.mat-list-item-content:hover .subChallenge-text {
+    transform: scale(1.2);
+}
+
+.subChallenge-text {
+    color: $color-sub-challenge-font;
+    transition: 0.3s;
+}
+
+.price-tag {
+    color: white;
+    border-radius: 9999px;
+    .edit-description {
+        display: none;
+    }
+    &:hover {
+        background: rgba(0, 0, 0, 0.8);
+        div {
+            opacity: 0.2;
+        }
+        .edit-description {
+            position: absolute;
+            top: 14px;
+            display: inline-block;
+        }
+    }
+}
+
+.main-info-img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.footer-container{
+  height: 4rem;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+  padding: 1rem 0;
+  background: $color-footer-background;
+  > * {
+    width: fit-content;
+    height: 2rem;
+  }
+}

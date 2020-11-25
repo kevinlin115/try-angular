@@ -1,0 +1,23 @@
+<h4 class="dialog-title">{{'BUTTON.MAIN_BAR.SETTINGS' | translate}}</h4>
+<div class="settings-container">
+    <div class="setting-bar">
+        <div>{{'DIALOG.SETTINGS.LANGUAGE' | translate}}</div>
+        <mat-form-field>
+            <mat-select name="food" [(ngModel)]="currentLang">
+                <mat-option *ngFor="let language of languageOptions" [value]="language.key">
+                    {{language.displayI18n}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <!-- 2019/12/8 不要將mode放在settings dialog和footer
+    <div class="">
+        <div>Mode</div>
+        <app-mode-radio-btn></app-mode-radio-btn>
+    </div> -->
+</div>
+<div class="d-flex justify-content-center">
+    <button style="outline: none;" mat-stroked-button class="font-weight-bold dialog-btn" (click)="confirm()">
+    {{'DIALOG.TITLE.CONFIRM' | translate}}
+  </button>
+</div>

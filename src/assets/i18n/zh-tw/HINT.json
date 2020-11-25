@@ -1,0 +1,6 @@
+{
+  "HINT": {
+    "HAVE_HIDE_CHALLENGE": "你已隱藏挑戰 - {{challengeName}}",
+    "NUMBERS_ONLY": "只能輸入數字"
+  }
+}
